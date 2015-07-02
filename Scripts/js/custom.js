@@ -154,6 +154,8 @@ $(document).ready(function(e) {
 		}
 		google.maps.event.addDomListener(window, 'load', mapInitialize);
 	}
+
+
 });
 
 $(window).load(function(e) {
@@ -351,3 +353,5 @@ function showReturnMessage(form_el) {
 $('.return-msg').click(function(e) {
 	$(this).removeClass('show-return-msg').html('&nbsp;');
 });
+
+
