@@ -1,0 +1,619 @@
+﻿@{
+    ViewBag.Title = "HowItWorks";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="~/assets/libraries/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/libraries/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/libraries/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/libraries/nvd3/nv.d3.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/libraries/OwlCarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/libraries/OwlCarousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/beopen.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/custom.css">
+    <title>Casavue Home</title>
+    <script src="//use.typekit.net/kbu5omp.js"></script>
+    <script>
+        try {
+            Typekit.load();
+        } catch (e) {
+        }</script>
+</head>
+<body>
+    <div class="header-standard">
+        <div class="container relative">
+            <div class="header-inner">
+                <div class="header-main">
+                    <div class="header-title">
+                        <a href="index.html">
+                            <img src="assets/img/casavue-logo-white.png" alt="Casavue">
+                            <span></span>
+                        </a>
+                    </div><!-- /.header-title -->
+                    <div class="header-navigation">
+                        <div class="nav-main-wrapper">
+                            <div class="nav-main-title visible-xs">
+                                <a href="#">
+                                    <img src="assets/img/casavue-logo.png" alt="Casavue">
+                                </a>
+                            </div><!-- /.nav-main-title -->
+                            <div class="nav-main-inner">
+                                <nav>
+                                    <ul id="nav-main" class="nav nav-pills">
+                                        <li>
+                                            @Html.ActionLink("Home", "Index", "Home")
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("How It Works", "HowItWorks", "Home")
+                                        </li>
+                                        <li>
+                                            <a href="~/Home/Index#pricing">Pricing</a>
+                                        </li>
+
+                                        <li>
+                                            @Html.ActionLink("Contact", "Contact", "Home")
+                                        </li>
+                                        <li class="important">
+                                            <a href="#popup-holder" class="submitbtn">Sign in</a>
+                                        </li>
+                                    </ul><!-- /.nav -->
+                                </nav>
+                            </div><!-- /.nav-main-inner -->
+                        </div><!-- /.nav-main-wrapper -->
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div><!-- /.header-navigation -->
+                </div><!-- /.header-main -->
+            </div>
+        </div>
+
+    </div>
+    <div class="page-wrapper">
+
+        <div id="page-title">
+
+            <div class="fullwidth background-green block center mb0">
+                <div class="container">
+                    <h1>How it works</h1>
+                </div><!-- /.container -->
+            </div>
+        </div>
+        <div class="main">
+            <section class="fullwidth padded40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Professional Real Estate Tools</h3>
+                            <p>At CasaVue we made the professional Top Producer real estate selling tools easy to use and available to astute homeowners. We help you effectively market your property and save thousands of dollars doing it.</p>
+                            <p>Use our tools to reach a much larger audience of qualified buyers. Our goal is for you to <strong><i>Sell your house for more money in less time.</i></strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Our packages feature:</h3>
+                            <ul>
+                                <li>Full property website;</li>
+                                <li>Custom professional lawn sign with SMS marketing;</li>
+                                <li>Integration with major print and online media;</li>
+                                <li>Online open house presentation;</li>
+                                <li>Personal YouTube Commercial and top rated support to help sell your house hassle free.</li>
+                            </ul>
+                            <p>We provide all the online and offline tools you need to promote the sale of your house to get the highest offers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="fullwidth devices-bg center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6 mb50">
+                            <h2>Our concept is <span class="underline">very simple</span></h2>
+                            <p>We provide you with all the tools and assistance you need to help you sell your home for the best possible price. by exposing you to more qualified buyers. and save thousands of dollars.</p>
+                            <p>We provide a simple easy to use sign up process, photo upload, marketing and advertising</p>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                        <div class="object-container object-macbook">
+                            <div class="object-content">
+                                <div class="object-frame">
+                                    <iframe width="462" height="288" src="https://www.youtube.com/embed/ZSUTIKtWxBk?rel=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <img class="object-device" src="assets/img/macbook.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fullwidth white-bg padded40">
+                <div class="container">
+                    <div class="row center">
+                        <div class="col-12-md">
+                            <h2>Getting set-up with us is easy and done in 3 steps</h2>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <div class="col-md-4"><h3>1. Step Account Step</h3></div>
+                        <div class="col-md-4"><h3>2. Upload images</h3></div>
+                        <div class="col-md-4"><h3>3. Market, Market, Market</h3></div>
+                    </div>
+                    <div class="row center">
+                        <div class="col-md-4"><p>Set-up an account and select your plan. Paid plans come with the most marketing tools.</p></div>
+                        <div class="col-md-4"><p>Upload your pictures and describe your property</p></div>
+                        <div class="col-md-4"><p>Use our powerful Tools to easily market your property on and offline.</p></div>
+                    </div>
+                </div>
+            </section>
+            <section class="fullwidth">
+                <div class="container">
+                    <div class="row">
+                        <div class="content col-sm-12 col-md-12">
+                            <h2 class="page-header">Frequently Asked Questions</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>What is the difference between a free and paid account?</h3>
+                                    <p>A free account will give you our powerful social media marketing tool the Virtual Lawn Sign ( VLS) and a 6 image website free of cost. This is a great way to put feelers out if you are thinking about selling your property.</p>
+                                    <p>If you are serious about selling your property and saving thousands of dollars doing it yourself,  our paid plans provide you with a full suite of online and offline tools including a mobile friendly 60 plus image responsive website; a professional lawn sign and much much more. In fact you will have everything you need to attract serious buyers to sell your property for top dollar.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>How quickly am I able to get set-up?</h3>
+                                    <p>It is very easy to activate your account. In fact you can start selling your home within minutes using our powerful online and offline marketing tools.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Am I able to upgrade my account?</h3>
+                                    <p>It is very easy upgrade at any time.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Is shipping of the lawn sign and post included in the price?</h3>
+                                    <p>A custom professional looking lawn sign is included free of charge with any of our $49.95/m plans or over. Shipping costs and post are not included.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Can I get help from you?</h3>
+                                    <p>We are here to help you as much as you need. Not sure what plan to start with? Select the complimentary plan and upgrade at anytime. so.. <a href="">GET STARTED NOW!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div><!-- /.main -->
+        <div id="footer" class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top-inner">
+                        <nav>
+                            <ul class="nav nav-pills">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="how-it-works.html">How it works</a></li>
+                                <li><a href="index.html#pricing">Pricing</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- /.footer-top-inner -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-top -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-inner">
+                        <div class="footer-bottom-left">
+                            &copy; 2015 Casavue. All rights reserved.
+                        </div><!-- /.footer-bottom-left -->
+                        <div class="footer-bottom-right">
+                            <ul class="header-topbar-social ml30">
+                                <li><a href="https://www.facebook.com/1844CasaVue"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://plus.google.com/115568953858325657933/posts"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/casavue"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/CasaVue1"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.pinterest.com/CasaVue/"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div><!-- /.footer-bottom-right -->
+                    </div><!-- /.footer-bottom-inner -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-bottom -->
+        </div><!-- /.footer -->
+    </div><!-- /.page-wrapper-->
+    <div id="popup-holder" style="display:none">
+        <div id="left">
+
+            <form class="dialog-tab dialog-box-login" method="post" action="http://localhost:53744/Account/CasavueLogin" style="">
+                @Html.AntiForgeryToken()
+                <div class="clearfix"></div>
+                <div class="dialog-box">
+                    <div class="dialog-title">Sign In</div>
+                </div>
+                <div class="rightsep">
+                    <div class="input-box text-input-box">
+                        <input autofocus="" tabindex="1" id="UserName" name="UserName" maxlength="60" class="inp enter-key" validation="notempty;email" placeholder="Email" type="email">
+                        <label style="display: none;" id="msgUserName" name="email" class="input-box-desc hidden-element error-message"></label>
+                        <label class="input-box-desc desc-message">e.g. yourname@gmail.com</label>
+                    </div>
+                    <div class="input-box radio-input-box">
+                        <div class="context-holder">
+                            <div class="input-panel">
+                                <input tabindex="7" id="context-switch-radio-sign-up" name="context" value="sign-up" type="radio">
+                            </div>
+                            <div class="input-panel-text">
+                                <label for="context-switch-radio-sign-up">I'm a new user</label>
+                            </div>
+                        </div>
+
+                        <div class="context-holder">
+                            <div class="input-panel">
+                                <input tabindex="7" id="context-switch-radio-login" name="context" value="login" checked="" type="radio">
+                            </div>
+                            <div class="input-panel-text">
+                                <label for="context-switch-radio-login">I'm an existing user</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input-box text-input-box" style="margin-bottom: 8px">
+                        <input tabindex="2" id="Password" name="Password" maxlength="15" class="inp enter-key" validation="notempty;length:{4,15};password" placeholder="Password" type="password">
+                        <label id="msgPassword" style="display: none;" name="password" class="input-box-desc hidden-element error-message"></label>
+                    </div>
+                    <div class="dialog-box clearfix">
+                        <span class="dialog-checkbox">
+                            <input tabindex="5" id="login-input-remember" name="rememberMe" checked="checked" type="checkbox">
+                            <label for="login-input-remember">Remember me</label>
+                            <a id="login-switch-context-forgot-password" href="#" class="switch-context switch-context-link right" rev="forgot-password">Forgot Password?</a>
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="captcha-wrapper-login" class="hidden">
+                        <span class="captcha-description">Just to make sure you're human, please type in the words you see below:</span>
+                        <div id="wix-captcha-default-login"></div>
+                        <label name="captchaValidation"></label>
+                    </div>
+                    <div class="action-box">
+                        <input tabindex="6" id="login-action-go" class="dialog-button action-login" value="GO" type="submit">
+                        <a href="#" tabindex="6" class="skip-login action-close switch-context-link" style="display:none">Skip login</a>
+
+                    </div>
+                </div>
+            </form>
+            <form method="post" action="http://localhost:53744/Account/RegisterExternal" class="dialog-tab dialog-box-sign-up" style="display: none">
+                <div class="clearfix"></div>
+                <div class="dialog-box">
+                    <div class="dialog-title">Sign Up</div>
+                </div>
+                <div class="rightsep">
+                    <div class="input-box text-input-box">
+                        <span class="input-box-title sign-up-email-title">My email address is</span>
+                        <input tabindex="1" id="Email" name="Email" maxlength="60" class="inp enter-key" validation="notempty;email" placeholder="Email" type="email">
+
+                        <label style="display: none;" name="email" class="input-box-desc hidden-element error-message signup-email-error"></label>
+                        <div class="padding-box"></div>
+                        <input tabindex="2" id="sign-up-input-email-validation" name="emailValidation" maxlength="60" class="inp enter-key" validation="match:email:trim,lowerCase" autocomplete="off" placeholder="Type your email again" type="email">
+                        <label style="display: none;" name="emailValidation" class="input-box-desc hidden-element error-message"></label>
+                        <label class="input-box-desc desc-message signup-emailvalidation-error">e.g. yourname@gmail.com</label>
+                    </div>
+                    <div class="input-box text-input-box">
+                        <span class="input-box-title sign-up-password-title">Enter a password</span>
+                        <input tabindex="3" id="regPassword" name="Password" maxlength="15" class="inp enter-key" validation="notempty;length:{4,15};password" autocomplete="off" placeholder="Password" type="password">
+
+                        <label style="display: none;" name="password" class="input-box-desc hidden-element error-message signup-regPassword-error"></label>
+                        <div class="padding-box"></div>
+                        <input tabindex="4" id="sign-up-input-password-validation" name="passwordValidation" maxlength="15" validation="match:password" class="inp enter-key" autocomplete="off" placeholder="Type your password again" type="password">
+                        <label style="display: none;" name="passwordValidation" class="input-box-desc hidden-element error-message signup-passwordValidation-error"></label>
+                    </div>
+                    <div class="dialog-box">
+                        <a id="sign-up-switch-context-login" href="#" class="switch-context switch-context-link" rev="login">&lt;&lt;&nbsp;I'm an existing user</a>
+                    </div>
+                    <div class="action-box">
+                        <input id="sign-up-action-go" tabindex="5" class="dialog-button action-signup" value="Sign Up" type="submit">
+                        <input type="hidden" name="First_Name" id="First_Name" value="" /> <input type="hidden" name="Last_Name" id="Last_Name" value="" />
+                    </div>
+                </div>
+                <div class="dialog-box">
+                    <label class="input-box-desc desc-message">
+                        * By signing up, you agree to our
+                        <a href="http://www.wix.com/about/terms-of-use" target="_blank">Terms of Use</a>,
+                        <a href="http://www.wix.com/about/privacy" target="_blank">Privacy</a>
+                        and to receive Wix emails, newsletters &amp; updates.
+                    </label>
+                </div>
+            </form>
+
+
+
+            <form class="dialog-tab dialog-box-set-password" style="display:none">
+                <div class="clearfix"></div>
+                <div class="dialog-box">
+                    <div class="dialog-title">Set Your Password</div>
+                </div>
+                <div class="forgot-desc">In order to update your settings you need to first set your Wix password:</div>
+                <div class="input-box text-input-box">
+                    <input tabindex="1" id="set-password-input-password" name="password" maxlength="15" class="inp enter-key" validation="notempty;length:{4,15};password" placeholder="Enter your new password" type="password">
+                    <label style="display: none;" name="password" class="input-box-desc hidden-element error-message"></label>
+                    <div class="padding-box"></div>
+                    <input tabindex="2" id="set-password-input-password-validation" name="passwordValidation" maxlength="15" validation="match:password" class="inp enter-key" placeholder="Type your password again" type="password">
+                    <label style="display: none;" name="passwordValidation" class="input-box-desc hidden-element error-message"></label>
+                </div>
+                <div class="action-box">
+                    <input id="set-password-action-go" href="#" class="dialog-button action-set" value="GO" type="submit">
+                </div>
+            </form>
+            <form class="dialog-tab dialog-box-forgot-password" style="display:none">
+                <div style="display: block;" class="step-1">
+                    <div class="clearfix"></div>
+                    <div class="dialog-box">
+                        <div class="dialog-title">Forgot Password?</div>
+                    </div>
+                    <div class="forgot-desc">Enter your Email address and we'll send you a link to reset your password</div>
+                    <div class="input-box text-input-box">
+                        <input tabindex="1" id="forgot-password-input-email" name="email" maxlength="60" class="inp enter-key" validation="notempty;email" placeholder="Email" type="text">
+                        <label style="display: none;" name="email" class="input-box-desc hidden-element error-message"></label>
+                        <label class="input-box-desc desc-message">e.g. yourname@gmail.com</label>
+                    </div>
+                    <div class="dialog-box">
+                        <a href="#" id="forgot-password-switch-context-login" class="switch-context switch-context-link switch-context-label" rev="login">&lt;&lt;&nbsp;Back to Sign In</a>
+                    </div>
+                    <div class="action-box">
+                        <input id="forgot-password-action-go" href="#" class="dialog-button action-forgot" value="GO" type="submit">
+                    </div>
+                </div>
+                <div style="display: none;" class="step-2 hidden-element">
+                    <div class="clearfix"></div>
+                    <div class="dialog-box forgot-done-box">
+                        <span class="forgot-done-img"></span>
+                        <span class="forgot-done-desc">Email with a reset password link has been sent to you.</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="action-box">
+                        <a id="forgot-password-action-done" href="#" class="dialog-button action-close">Done</a>
+                    </div>
+                </div>
+            </form>
+            <form class="dialog-tab dialog-box-account-verify" style="display:none">
+                <div class="step-1">
+                    <div class="clearfix"></div>
+                    <div class="dialog-box">
+                        <div class="dialog-title">Account Verification</div>
+                    </div>
+                    <div class="description">
+                        <span class="email bold description"></span>
+                        is the same email address used for your Wix account.
+                    </div>
+                    <div class="description">Please confirm that both accounts belong to you by entering your Wix password below:</div>
+                    <div class="input-box text-input-box">
+                        <input tabindex="2" id="account-verify-input-password" name="password" maxlength="15" class="inp enter-key" validation="notempty;length:{4,15};password" placeholder="Enter your Wix password here" type="password">
+                        <label style="display: none;" name="password" class="input-box-desc hidden-element error-message"></label>
+                        <span class="input-box-desc desc-message"></span>
+                    </div>
+                    <div class="dialog-box">
+                        <a id="verify-switch-context-forgot-password" href="#" class="switch-context switch-context-link" rev="forgot-password">Forgot Password?</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="action-box">
+                        <input id="forgot-password-action-go" tabindex="5" href="#" class="dialog-button action-verify" value="GO" type="submit">
+                    </div>
+                </div>
+            </form>
+            <form class="dialog-tab dialog-box-account-merge" style="display:none">
+                <div class="clearfix"></div>
+                <div class="dialog-box">
+                    <div class="dialog-title">Already have a Wix account?</div>
+                </div>
+                <div class="description" social_network_str="If you've previously created a Wix account, you can use your {socialNetwork} login with your existing wix account."></div>
+                <div class="bold description" social_network_str="To log in to your existing account with {socialNetwork}, please enter your Email Address and Password."></div>
+                <div class="input-box text-input-box">
+                    <input autofocus="" tabindex="1" id="account-merge-input-email" name="email" maxlength="60" class="inp enter-key" validation="notempty;email" placeholder="Email" type="text">
+                    <label style="display: none;" name="email" class="input-box-desc hidden-element error-message"></label>
+                </div>
+                <div class="input-box text-input-box">
+                    <input tabindex="2" id="account-merge-input-password" name="password" maxlength="15" class="inp enter-key" validation="notempty;length:{4,15};password" placeholder="Password" type="password">
+                    <label style="display: none;" name="password" class="input-box-desc hidden-element error-message"></label>
+                </div>
+                <div class="dialog-box">
+                    <a id="merge-switch-context-forgot-password" href="#" class="switch-context switch-context-link" rev="forgot-password">Forgot Password?</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="action-box">
+                    <input href="#" tabindex="7" id="merge-action-no" class="dialog-button action-nomerge" value="No, Thanks" type="button">
+                    <input href="#" tabindex="6" id="merge-action-go" class="dialog-button action-merge" value="OK" type="submit">
+                </div>
+            </form>
+            <form class="dialog-tab dialog-box-get-email" style="display:none">
+                <div class="clearfix"></div>
+                <div class="dialog-box">
+                    <div class="dialog-title small">Please enter your email below:</div>
+                </div>
+                <div class="input-box text-input-box">
+                    <input autofocus="" tabindex="1" id="account-merge-input-email" name="email" maxlength="60" class="inp enter-key" validation="notempty;email" placeholder="Email" type="text">
+                    <label style="display: none;" name="email" class="input-box-desc hidden-element error-message"></label>
+                    <label class="input-box-desc desc-message">e.g. yourname@gmail.com</label>
+                </div>
+                <div class="clearfix"></div>
+                <div class="action-box">
+                    <input href="#" tabindex="2" id="get-email-action-go" class="dialog-button action-get-email" value="OK" type="submit">
+                </div>
+            </form>
+        </div>
+
+        <div id="right">
+            <div class="right-slider">
+                <div class="social-login-tab-container">
+                    <div class="seperator-text">or</div>
+                    <div class="social-login-tab clearfix">
+                        <div class="social-desc">Click below to sign in using your social account</div>
+                        <div id="social-login-container" style="">
+
+                            <iframe style="overflow: hidden" src="http://localhost:53744/Account/CasavueLogin"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="~/assets/js/jquery.js"></script>
+
+    <script type="text/javascript" src="~/assets/libraries/jquery-transit/jquery.transit.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/bootstrap/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/bootstrap/assets/javascripts/bootstrap/collapse.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/autosize/jquery.autosize.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/isotope/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;sensor=false" type="text/javascript"></script>
+    <script type="text/javascript" src="~/assets/libraries/jquery-google-map/infobox.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/jquery-google-map/markerclusterer.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/jquery-google-map/jquery-google-map.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/nvd3/lib/d3.v3.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/nvd3/lib/d3.v3.js"></script>
+    <script type="text/javascript" src="~/assets/libraries/nvd3/nv.d3.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/beopen.js"></script>
+    <script type="text/javascript" src="~/assets/js/charts.js"></script>
+    <script type="text/javascript" src="~/assets/js/map.js"></script>
+    <script type="text/javascript" src="~/assets/js/map.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="~/Scripts/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="~/Scripts/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="~/Scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            'use strict';
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.submitbtn').fancybox();
+
+            /*
+             *  Different effects
+             */
+
+            $("#UserName").change(function () {
+                $("#Email").val($("#UserName").val());
+            });
+
+            $("#Password").change(function () {
+                $("#regPassword").val($("#Password").val());
+            });
+
+            $("#sign-up-switch-context-login").click(function () {
+                $(".dialog-box-login").show();
+                $(".dialog-box-sign-up").hide();
+            });
+
+            // Login
+            $('#login-action-go').click(function () {
+
+                //Validation
+                if ($("#UserName").val() == "") {
+                    $("#msgUserName").html("Enter an email address").show();
+                    return false;
+                }
+
+                if ($("#Password").val() == "") {
+                    $("#msgPassword").html("Enter an password").show();
+                    return false;
+                }
+
+                if ($("input:radio[name=context]:checked").val() == "login") {
+
+                    $(".dialog-box-login").submit();
+
+                } else {
+
+                    //Check existing email
+                    var url = "/Home/doesUserEmailExist";
+                    var data = { UserName: $("#UserName").val() };
+                    $.ajax({
+                        dataType: "json",
+                        method: 'POST',
+                        url: url,
+                        data: data,
+                        success: function (data) {
+                            if (data == false) {
+                                $(".dialog-box-login").hide();
+                                $(".dialog-box-sign-up").show();
+                            } else {
+                                $("#msgUserName").html("Email already exist.").show();
+                            }
+                        }
+                    });
+                    return false;
+                }
+
+            });
+
+
+            //signup action
+            $("#sign-up-action-go").click(function () {
+                //Validation
+                if ($("#Email").val() == "") {
+                    $(".signup-email-error").html("Enter an email address").show();
+                    return false;
+                }
+
+                if ($("#sign-up-input-email-validation").val() == "") {
+                    $(".signup-emailvalidation-error").html("Enter an email address").show();
+                    return false;
+                }
+
+                if ($("#sign-up-input-email-validation").val() != $("#Email").val()) {
+                    $(".signup-emailvalidation-error").html("Email address didnt matched").show();
+                    return false;
+                }
+
+
+                //password vaidation
+                if ($("#regPassword").val() == "") {
+                    $(".signup-regPassword-error").html("Enter a password").show();
+                    return false;
+                }
+
+                if ($("#sign-up-input-password-validation").val() == "") {
+                    $(".signup-passwordValidation-error").html("Confirm password cannot be blank").show();
+                    return false;
+                }
+
+                if ($("#regPassword").val() != $("#sign-up-input-password-validation").val()) {
+                    $(".signup-emailvalidation-error").html("Confirm Password didnt matched").show();
+                    return false;
+                }
+
+            });
+
+        });
+    </script>
+ 
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-17919379-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</body>
+</html>
+
+
+

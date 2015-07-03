@@ -1,0 +1,451 @@
+body {
+    font-family: 'proxima-nova';
+}
+
+.header-background {
+    background: url('../../assets/extra/Comp_69328714.jpg');
+    background-size: cover;
+
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.header-background-inner {
+    background: rgba(0, 0, 0, 0.6);
+    height: 600px;
+}
+
+.header-call-to-action-wrapper .header-main {
+    background: transparent;
+}
+
+.header-call-to-action .buttons a {
+    padding: 18px 40px;
+    letter-spacing: 1px;
+    background: #3ba433;
+}
+
+.header-title img {
+    margin-top: 5px;
+}
+
+.nav-pills > li > a {
+    letter-spacing: 1px;
+}
+
+.footer {
+    background-color: #00409d;
+}
+
+section.dot {
+    position: relative;
+    background: #fff;
+
+}
+
+section.dot .row:before {   
+    background: #3ba433;
+
+    border-radius: 100%;
+    content: '';
+
+    display: block;
+    font-size: 16px;
+    padding: 6px;
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    z-index: 2; 
+    left: 50%;
+    top: 60px;
+    margin-left: -4px;
+    margin-bottom: 20px;
+    outline: 6px solid #fff;
+}
+
+section.dot:after {
+    background: url(../../assets/img/dot.png);
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 5px; 
+    z-index: 1;
+}
+
+section.dot h2 {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+section.dot .tag {
+    color: #3ba433;
+}
+
+section.dot .tag.fill {
+    background-color: #3ba433;
+    padding: 3px 8px;
+    line-height: 14px;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+section.dot .online .tag.fill {
+    background-color: #00409d;
+}
+
+section.dot .full .tag.fill {
+    background-color: #FA3D68;
+}
+
+section.dot .row.online:before {
+    background-color: #00409d;
+}
+
+section.dot .row.full:before {
+    background-color: #FA3D68;
+}
+
+section.dot p {
+    color: #555;
+}
+
+.img { 
+    width: 100%;
+    height: 250px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    
+}
+
+section.dot .row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+}
+
+section.dot .row.dotted {
+
+}
+
+section.dot .container {
+    z-index: 2;
+    position: relative;
+}
+
+.background-testimonials {
+    /*background: url(../extra/testimonial-bg.jpg) no-repeat;*/
+    background-size: cover;
+    background: #3ba433;
+}
+
+.testimonial-person {
+    float: left;
+
+}
+
+.block p.testimonial-content {
+    margin-left: 140px;
+    color: #fff;
+}
+
+.features {
+    padding-top: 85px;
+}
+
+.pricing-col.popular {
+    outline: 5px solid #3ba433;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #fff;
+    width: 6px;
+    height: 6px;
+}
+
+.background-green {
+    background: #3ba433;
+}
+
+.background-green.block h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.background-green .btn {
+    color: #000;
+    background: #fff;
+    padding: 18px 40px;
+    letter-spacing: 1px;
+}
+
+.pricing-col .btn {
+    background: #3ba433;
+
+}
+
+.background-green .btn:hover, .background-green .btn:visited, .background-green .btn:focus {
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    .nav-main-inner {
+        overflow: auto;
+    }
+
+    .header-navigation .nav {
+        overflow: auto;
+    }
+
+}
+
+
+.background-products {
+    height: 2020px;
+    background: url(../../assets/extra/casavue-home-products.png) no-repeat center top;
+}
+
+
+
+
+.header-inner {    
+    position: absolute;
+    z-index: 10000;
+    left: 0px;
+    right: 0px;
+}
+
+.slideshow-overlay {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.header-slideshow-wrapper,
+#header-slideshow {
+    height: 600px;
+    overflow: hidden;
+}
+
+.header-call-to-action {
+    margin: 210px 0px;
+    color: #fff;
+}
+
+@media (min-width: 767px) {
+    .header-slideshow-wrapper .header-navigation .nav li a {
+        color: #fff;
+    }
+}
+
+.header-call-to-action .buttons .btn, .header-call-to-action .buttons .btn-secondary {
+    display: inline-block;
+}
+
+.owl-carousel .item {
+    background: #000;
+}
+
+.owl-carousel .item img {
+    opacity: 0.5;
+    min-width: 100%;
+    min-height: 600px;
+}
+
+
+
+/*-- MENU --*/
+
+#nav-main .important a:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+    border: 2px solid #fff;
+    border-radius: 8px;
+    top: 5px;
+    bottom: 5px;
+    display: block;
+    opacity: 0.2;
+    transition: all 0.4s ease;
+}
+
+#nav-main .important a:hover:before {
+    opacity: 1;
+}
+
+#nav-main .important {
+    margin-left: 15px;
+}
+
+#nav-main .important { position: relative; }
+
+
+.slideshow-overlay {
+    transition: opacity 0.2s ease;
+}
+#header-slideshow {
+    transition: margin 0.2s ease;
+}
+
+
+/* SLIDESHOW */
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    text-indent: -10000px;  
+    position: absolute;
+    background: transparent;
+
+}
+
+
+.owl-theme .owl-controls .owl-buttons .owl-next,
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 30px;
+    -webkit-transform: rotate(-45deg);
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev:hover {
+    -webkit-transform: rotate(-45deg) translateX(-10px) translateY(-10px);
+
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 30px;
+    transform: rotate(45deg);
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next:hover {
+    -webkit-transform: rotate(45deg) translateX(10px) translateY(-10px);
+
+}
+
+.owl-theme:hover .owl-controls .owl-buttons .owl-prev,
+.owl-theme:hover .owl-controls .owl-buttons .owl-next {
+    opacity: 1;
+}
+
+#header-slideshow .owl-controls {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+#header-slideshow .owl-controls .owl-pagination {
+    position: absolute;
+    top: 560px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.devices-bg {    
+    background: url(../../assets/extra/device-bg.jpg) repeat-x center 100px #fff;
+    display: block;
+    height: 580px;
+    padding-top: 70px;
+}
+
+.devices-bg h2 {
+    font-size: 32px;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.devices-bg h2:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    left: 0px;
+}
+
+.devices-bg h2 span.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.devices-bg h2 span.underline:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #3ba433;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+}
+
+.devices-bg p {
+    color: #757575;
+}
+
+.device {
+    display: block;
+    margin: auto;
+
+}
+
+.header-title img {
+    opacity: 1;
+}
+
+
+/* The animation code */
+@-webkit-keyframes cssAnimation {
+    0% {background-position: right 100px;}
+    50% {background-position: left 100px;}
+    100% {background-position: right 100px;}
+}
+
+/* The element to apply the animation to */
+.devices-bg {    
+
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 200s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+

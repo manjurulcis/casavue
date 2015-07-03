@@ -26,7 +26,7 @@ namespace CasaVueStatic.Controllers
             return View();
         }
 
-        public ActionResult MyTest()
+        public ActionResult HowItWorks()
         {
             return View();
         }
