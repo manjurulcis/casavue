@@ -31,6 +31,11 @@ namespace CasaVueStatic.Controllers
             return View();
         }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
         //check if user email exists
         [HttpPost]
         public JsonResult doesUserEmailExist(string UserName)

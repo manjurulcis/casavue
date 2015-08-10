@@ -738,7 +738,19 @@ form.dialog-box-login .dialog-box{
   line-height: 32px;
   color: #000 !important;
   font-size: 14px;
-  display: inline-block
+  display: inline-block;
+}
+#popup-holder .radio-input-box label{
+    
+  width: 120px !important
+
+}
+#popup-holder .radio-input-box input[type="radio"] {
+  -webkit-appearance: radio !important;
+}
+
+#popup-holder .radio-input-box input[type="checkbox"] {
+  -webkit-appearance: checkbox !important;
 }
 
 #popup-holder  .context-holder{
@@ -747,12 +759,12 @@ form.dialog-box-login .dialog-box{
 }
 
 #popup-holder .radio-input-box .input-panel{
-    width: 15%;
+    width: 20% !important;
     display: table-cell
 }
 
 #popup-holder .radio-input-box .input-panel-text{
-    width: 85%;
+    width: 85% !important;
     display: table-cell
 }
 

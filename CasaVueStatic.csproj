@@ -1898,7 +1898,7 @@
     <Content Include="Scripts\owl-carousel\owl.carousel.min.js" />
     <Content Include="Scripts\owl-carousel\owl.transitions.css" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Home\Contact.html" />
+    <None Include="Views\Home\Contact.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
