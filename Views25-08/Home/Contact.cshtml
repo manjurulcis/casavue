@@ -92,7 +92,7 @@
                         <div class="col-sm-6">
                             <div class="box">
                                 <h2 class="mt0">Got a question?</h2>
-                                <p>Please fill in form.</p>
+                                <p>We'll answer as soon as possible.</p>
                                 <form method="post" action="#">
                                     <div class="form-group">
                                         <input class="form-control" type="text" name="name" placeholder="Your Name">
@@ -117,16 +117,15 @@
                                     <h2 class="mb30 mt16">Contact</h2>
                                     <p>
                                         Tel: 1.844.CasaVue<br />
-                                        Tel: 1.305.590.8219<br />
-
+                                        Email: <a href="mail:info@casavue.com">info@casavue.com</a>
                                     </p>
                                 </div>
                                 <div class="col-sm-6">
                                     <h2 class="mb30 mt16">Address</h2>
                                     <p>
-                                        CasaVue LLC<br />
+                                        CasaVue Inc.<br />
                                         1224 Washington Ave,<br />
-                                        Miami Beach, <br />Florida.
+                                        Miami Beach, Florida.<br />
                                         33139<br />
                                         <strong>U.S.A</strong>
                                     </p>
@@ -236,7 +235,7 @@
                     <div class="input-box radio-input-box">
                         <div class="context-holder">
                             <div class="input-panel">
-                                <input tabindex="7" id="context-switch-radio-sign-up" name="context" checked="checked" value="sign-up" type="radio" style="-webkit-appearance: radio !important">
+                                <input tabindex="7" id="context-switch-radio-sign-up" name="context" value="sign-up" type="radio" style="-webkit-appearance: radio !important">
                             </div>
                             <div class="input-panel-text">
                                 <label for="context-switch-radio-sign-up">I'm a new user</label>
@@ -245,7 +244,7 @@
 
                         <div class="context-holder">
                             <div class="input-panel">
-                                <input tabindex="7" id="context-switch-radio-login" name="context" value="login"   type="radio" style="-webkit-appearance: radio !important">
+                                <input tabindex="7" id="context-switch-radio-login" name="context" value="login" checked="" type="radio" style="-webkit-appearance: radio !important">
                             </div>
                             <div class="input-panel-text">
                                 <label for="context-switch-radio-login">I'm an existing user</label>
@@ -513,15 +512,10 @@
                 }
 
                 if ($("#Password").val() == "") {
-                    $("#msgPassword").html("Enter a password").show();
+                    $("#msgPassword").html("Enter an password").show();
                     return false;
                 }
 
-				if ($("#Password").val().length < 8) {
-                    $("#msgPassword").html("Password is too short. Please enter at least 8 character").show();
-                    return false;
-                }
-				
                 if ($("input:radio[name=context]:checked").val() == "login") {
 
                     $(".dialog-box-login").submit();
@@ -565,7 +559,7 @@
                 }
 
                 if ($("#sign-up-input-email-validation").val() != $("#Email").val()) {
-                    $(".signup-emailvalidation-error").html("Email address didn't matched").show();
+                    $(".signup-emailvalidation-error").html("Email address didnt matched").show();
                     return false;
                 }
 
